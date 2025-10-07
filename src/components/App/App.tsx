@@ -6,7 +6,7 @@ import type { Movie } from '../../types/movie';
 import MovieGrid from '../MovieGrid/MovieGrid';
 import Loader from '../Loader/Loader';
 import MovieModal from '../MovieModal/MovieModal';
-import fetchMovies from '../../services/movieServiсe';
+import fetchMovies from '../../services/movieService';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import ReactPaginate from 'react-paginate';

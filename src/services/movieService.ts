@@ -3,10 +3,10 @@ import type { Movie } from '../types/movie';
 
 axios.defaults.baseURL = 'https://api.themoviedb.org/3';
 
-axios.defaults.headers.common = {
-  accept: 'application/json',
-  Authorization: `Bearer ${import.meta.env.VITE_TMDB_TOKEN}`,
-};
+
+axios.defaults.baseURL = 'https://api.themoviedb.org/3';
+axios.defaults.headers.common['accept'] = 'application/json';
+axios.defaults.headers.common['Authorization'] = `Bearer ${import.meta.env.VITE_TMDB_TOKEN}`;
 
 axios.defaults.params = {
   include_adult: false,
